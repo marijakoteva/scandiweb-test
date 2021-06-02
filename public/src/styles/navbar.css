@@ -1,0 +1,74 @@
+.nav-container {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1d1f22;
+    text-transform: uppercase;
+  }
+  
+  /* Categories */
+  .nav-container .categories {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .nav-container .categories li {
+    display: inline-block;
+    padding: 30px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .nav-container .categories li:hover,
+  .nav-container .categories li.active {
+    border-bottom: 2px solid #5ece7b;
+    color: #5ece7b;
+  }
+  /* Logo */
+  .nav-container .logo img {
+    padding: 15px 0;
+  }
+  /* Actions */
+  .nav-container .actions {
+    margin-left: 40px;
+    margin-top: 20px;
+  }
+  .nav-container .actions .currency-container {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+  }
+  .nav-container .actions .currency-container .currency-logo {
+    font-size: 22px;
+    padding-right: 4px;
+    cursor: pointer;
+  }
+  .nav-container .actions .currency-container .currency-logo:hover {
+    color: #5ece7b;
+  }
+  .nav-container .actions .currency-container .arrow-down {
+    cursor: pointer;
+  }
+  
+  .nav-container .currency-container .currencies {
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    box-shadow: 0px 0px 32px 2px rgb(168, 172, 176, 0.19);
+    padding: 0 40px 0 20px;
+    top: 35px;
+    left: -15px;
+    width: 62px;
+    display: none;
+  }
+  .nav-container .actions .currency-container .currencies.show {
+    display: block;
+  }
+  .nav-container .actions .currency-container .currencies li {
+    margin: 20px 0;
+  }
+  .nav-container .actions .currency-container .currencies li:hover {
+    color: #5ece7b;
+    cursor: pointer;
+  }
